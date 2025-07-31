@@ -1,0 +1,106 @@
+/* Estilo base */
+body {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Título centralizado */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Container principal: imagem à esquerda, tabela ao centro, links à direita */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+/* Imagem sem formato circular */
+img {
+    width: 250px;
+    height: auto;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+/* Tabela centralizada */
+.tabela {
+    flex: 1;
+    max-width: 400px;
+}
+
+.tabela h2 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+
+th, td {
+    border: 1px solid #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ffffff;
+}
+
+/* Links à direita da imagem */
+.Links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Links h2 {
+    text-align: center;
+}
+
+.Links a {
+    background-color: #eaeaea;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.Links a:hover {
+    background-color: #d0d0d0;
+}
+
+/* Rodapé no final */
+.Contato {
+    width: 100%;
+    background-color: #f4f4f4;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+    border-top: 1px solid #ccc;
+}
+
+#data {
+  position: absolute;
+  top: 15px;
+  left: 1150px;
+  font-size: 14px;
+  color: #333;
+  background-color: #ffffff; /* azul claro sutil */
+  padding: 6px 12px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  font-weight: 500;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicial</title>
+    <link rel="stylesheet" href="Pagina1.css">
+</head>
+<body>
+    <h1>Matheus Malaman</h1>
+    
+    <div id="data"></div>
+    <div class="main-container">
+       
+        <div class="left-container">
+            <img src="C:\Users\2DEVT-A\Downloads\17085518.jpg" alt="Foto pessoal">
+
+            <div class="SobreMim">
+                <h2>Sobre mim</h2>
+                <p>Meu nome é Matheus Malaman e estou atualmente com 18 anos de idade, cursando desenvolvimento de sistemas no SENAI, trabalhando na Ajinomoto e conquistando meus sonhos.</p>
+            </div>
+        </div>
+
+       
+        <div class="right-container">
+            <div class="Hobbies">
+                <h2>Principais Hobbies</h2>
+                <ul>
+                    <li>Assistir Filmes</li>
+                    <li>Jogar Vôlei</li>
+                    <li>Jogar Valorant</li>
+                    <li>Estudar em momentos livres</li>
+                </ul>
+            </div>
+
+            <div class="Metas">
+                <h2>Metas</h2>
+                <ul>
+                    <li>Ter um emprego bom e estável</li>
+                    <li>Conquistar uma família</li>
+                    <li>Ter uma residência boa para se morar</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="Contato">
+        <p>Cell: (99) 99999-9999 | Email: criativo@gmail.com | Whatsapp: (99) 99999-9999</p>
+    </div>
+
+    <button onclick="pagina2()">Passar</button>
+
+    <script>
+
+        document.getElementById("data").textContent = new Date().toLocaleDateString("pt-BR");
+
+        function pagina2() {
+            setTimeout(() => {
+                window.location.href = "Pagina2.html";
+            }, 500);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 50px;
+    flex-wrap: wrap;
+    min-height: 600px;
+}
+
+/* Coluna da esquerda: imagem + sobre mim */
+.left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    gap: 20px;
+}
+
+/* Coluna da direita: hobbies + metas */
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+    gap: 20px;
+}
+
+/* Imagem pessoal */
+img {
+    width: 300px;
+    height: auto;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 8px;
+}
+
+/* Seções com fundo leve */
+.SobreMim, .Hobbies, .Metas {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* Rodapé de contato */
+.Contato {
+    text-align: center;
+    margin-top: 50px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+}
+
+/* Botão fixo no canto inferior direito */
+button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+#data {
+  position: absolute;
+  top: 15px;
+  left: 1150px;
+  font-size: 14px;
+  color: #333;
+  background-color: #ffffff; /* azul claro sutil */
+  padding: 6px 12px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  font-weight: 500;
+}
