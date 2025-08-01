@@ -104,3 +104,17 @@ th {
   box-shadow: 0 0 6px rgba(0,0,0,0.1);
   font-weight: 500;
 }
+
+button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}

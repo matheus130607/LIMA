@@ -43,7 +43,16 @@
         <p>Cell: (99) 99999-9999 | Email: criativo@gmail.com | Whatsapp: (99) 99999-9999</p>
     </div>
 
+    <button onclick="pagina1()">Voltar</button>
+
     <script>
+
+        function pagina1() {
+            setTimeout(() => {
+                window.location.href = "Pagina1.html";
+            }, 500);
+        }
+
         document.getElementById("data").textContent = new Date().toLocaleDateString("pt-BR");
     </script>
 </body>
