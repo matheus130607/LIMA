@@ -1,9 +1,13 @@
-function sobre(sesao) {
-    document.getElementById('msg1').classList.add("hidden");
-    document.getElementById('msg2').classList.add("hidden");
-    document.getElementById('msg3').classList.add("hidden");
-    document.getElementById('msg4').classList.add("hidden");
-
-    document.getElementById(sesao).classList.remove("hidden");
+function sobrenos() {
+   window.location.href = "Jornalsobre.html"
+}
+function series() {
+   window.location.href = "Jornalseries.html"
+}
+function oscar() {
+   window.location.href = "Jornaloscar.html"
+}
+function drama() {
+   window.location.href = "Jornaldrama.html"
 }
 
