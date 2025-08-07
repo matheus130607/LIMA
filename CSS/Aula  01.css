@@ -1,0 +1,20 @@
+/* Formação de paragrafo */
+p {
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 10px;
+    text-align: start;
+}
+h1{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h2 {
+    color: orange;
+    font: 400;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
