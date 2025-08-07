@@ -11,4 +11,5 @@ function drama() {
 function Inicio() {
    window.location.href = "Jornalinicio.html"
 }
+document.getElementById("data").textContent = new Date().toLocaleDateString("pt-BR");
 
