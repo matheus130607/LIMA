@@ -1,6 +1,4 @@
-function sobrenos() {
-   window.location.href = "Jornalsobre.html"
-}
+
 function series() {
    window.location.href = "Jornalseries.html"
 }
@@ -9,5 +7,8 @@ function oscar() {
 }
 function drama() {
    window.location.href = "Jornaldrama.html"
+}
+function Inicio() {
+   window.location.href = "Jornalinicio.html"
 }
 
