@@ -1,0 +1,75 @@
+/* Fundo bege e ajustes gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: beige;
+    color: #333;
+}
+
+/* Container centralizado */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Menu superior */
+.menu {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu h1 {
+    margin-bottom: 15px;
+    color: #5c3b1e;
+}
+
+.menu button {
+    background-color: #e6d8b5;
+    border: 1px solid #bfa87f;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu button:hover {
+    background-color: #d4c299;
+}
+
+/* Seção Sobre Nós */
+.sobrenos {
+    background-color: #fdf7e3;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.sobrenos h2 {
+    color: #5c3b1e;
+}
+
+.sobrenos img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    padding: 10px;
+    background-color: #e6d8b5;
+    border-radius: 8px;
+}
+
+.rodape a {
+    color: #5c3b1e;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+}
