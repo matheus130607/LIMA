@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #e0f2ff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* MENU */
+.menu {
+    background-color: #002244;
+    text-align: center;
+    padding: 15px;
+    margin: 0 0 20px 0;
+    width: 100vw;     
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.menu button {
+    background-color: white;
+    border: none;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.menu button:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+/* FLEX PARA FORMULÁRIO E IMAGEM */
+.matricula-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: nowrap; /* garante que não quebre a linha */
+}
+
+/* FORMULÁRIO À ESQUERDA */
+.matriculas_texto {
+    flex: 0 0 45%; /* ocupa 45% do espaço */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* IMAGEM À DIREITA */
+.matri {
+    flex: 0 0 50%; /* ocupa 50% do espaço */
+    text-align: center;
+}
+
+.matri img {
+    width: 100%;
+    height: auto;
+    max-width: 600px; /* garante que não fique maior que 600px */
+    border-radius: 8px;
+}
+
+/* FORMULÁRIO */
+.form-grupo {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-grupo label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-grupo input,
+.form-grupo select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.form-grupo input:focus,
+.form-grupo select:focus {
+    border: 1px solid #002244;
+}
+
+/* RODAPÉ */
+.rodape {
+    background-color: #002244;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    width: 100vw;     
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.rodape a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 768px) {
+    .matricula-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .matriculas_texto,
+    .matri {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 20px 0;
+    }
+}

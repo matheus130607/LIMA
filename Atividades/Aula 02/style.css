@@ -1,73 +1,156 @@
-/* Fundo bege e ajustes gerais */
 body {
     margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: beige;
-    color: #333;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #e0f2ff; /* azul clarinho */
 }
 
-/* Container centralizado */
 .container {
-    max-width: 1200px;
-    margin: auto;
+    max-width: 1100px;
+    margin: 0 auto;
     padding: 20px;
 }
 
-/* Menu superior */
-.menu {
+/* TÍTULOS */
+h1 {
     text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+/* SOBRENOS CENTRALIZADO */
+.sobrenos h2 {
+    text-align: center;
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
-.menu h1 {
-    margin-bottom: 15px;
-    color: #5c3b1e;
+/* MENU */
+.menu {
+    background-color: #002244;
+    text-align: center;
+    padding: 15px;
+    margin: 0 0 20px 0;
+    width: 100vw;     
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 .menu button {
-    background-color: #e6d8b5;
-    border: 1px solid #bfa87f;
-    padding: 10px 15px;
+    background-color: white;
+    border: none;
     margin: 5px;
+    padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .menu button:hover {
-    background-color: #d4c299;
+    background-color: #ddd;
+    transform: scale(1.05);
 }
 
-/* Seção Sobre Nós */
-.sobrenos {
-    background-color: #fdf7e3;
-    padding: 20px;
+/* SOBRE */
+.sobre {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.sobre img {
+    width: 500px; 
+    height: auto;
     border-radius: 8px;
-    margin-bottom: 20px;
+    flex-shrink: 0;
 }
 
-.sobrenos h2 {
-    color: #5c3b1e;
+.sobre .mensagem {
+    flex: 1;
 }
 
-.sobrenos img {
-    max-width: 100%;
+/* SOBRE1 */
+.sobre1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    flex-direction: row-reverse; 
+}
+
+.sobre1 img {
+    width: 500px; 
+    height: auto;
     border-radius: 8px;
-    margin-bottom: 15px;
+    flex-shrink: 0;
 }
 
-/* Rodapé */
-.rodape {
+.sobre1 .mensagem {
+    flex: 1;
+}
+
+/* HORÁRIOS */
+.horarios {
     text-align: center;
-    padding: 10px;
-    background-color: #e6d8b5;
+}
+
+.horarios .semana {
+    display: inline-block;
+    width: 250px;   
+    height: 400px;  
+    margin: 15px;
     border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    vertical-align: top;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* transição suave */
+}
+
+.horarios .semana:hover {
+    transform: scale(1.05);  /* aumenta levemente */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* sombra ao redor */
+}
+
+.horarios .semana .texto {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 10px;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* RODAPÉ */
+.rodape {
+    background-color: #002244b7;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    width: 100vw;     
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 .rodape a {
-    color: #5c3b1e;
+    color: #ffcc00;
     text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .rodape a:hover {

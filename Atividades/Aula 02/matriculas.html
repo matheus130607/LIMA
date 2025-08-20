@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capela de Santo Antônio - Rio Claro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Título principal -->
+    <h1>Bem vindo a Capela de Santo Antônio</h1>
+
+    <!-- Menu -->
+    <div class="menu">
+        <button onclick="inicio()">Inicio</button>
+        <button onclick="eventos()">Eventos</button>
+        <button onclick="matriculas()">Matriculas</button>
+        <button onclick="faleconosco()">Fale conosco</button>
+    </div>
+
+    <!-- Container principal -->
+    <div class="container">
+        <h1>Matriculas</h1>
+
+        <!-- FLEX CONTAINER -->
+        <div class="matricula-container">
+            <!-- FORMULÁRIO À ESQUERDA -->
+            <div class="matriculas_texto">
+                <h2>Matricule-se já</h2>
+
+                <div class="form-grupo">
+                    <label for="cursos">Cursos</label>
+                    <select name="cursos" id="cursos">
+                        <option value="">Selecione ...</option>
+                        <option value="crisma">Crisma</option>
+                        <option value="pastorais">Pastorais</option>
+                        <option value="ministro">Ministro</option>
+                        <option value="acolito">Acolito</option>
+                    </select>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome:">
+                </div>
+
+                <div class="form-grupo">
+                    <label for="data">Data de nascimento:</label>
+                    <input type="date" id="data">
+                </div>
+
+                <div class="form-grupo">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" placeholder="Digite seu email">
+                </div>
+
+                <div class="form-grupo">
+                    <label for="celular">Celular:</label>
+                    <input type="text" id="celular" placeholder="Digite seu telefone:">
+                </div>
+            </div>
+
+            <!-- IMAGEM À DIREITA -->
+            <div class="matri">
+                <img src="IMG/Imagem 1.jpg" alt="Imagem ilustrativa">
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+      <div class="rodape">
+        <p> Contatos: 
+            <a href="https://www.facebook.com/groups/252665982282954/posts/1566153484267524/">Facebook</a> ||
+            <a href="">Telefone</a> ||
+            <a href="https://www.google.com/local/place/fid/0x94c7da6a123c874f:0xfe2ce009d72d4c26/photosphere?iu=https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid%3DkRWnoCy_4WJ7o_ZGVKZ3qQ%26cb_client%3Dsearch.gws-prod.gps%26yaw%3D84.42268%26pitch%3D0%26thumbfov%3D100%26w%3D0%26h%3D0&ik=CAISFmtSV25vQ3lfNFdKN29fWkdWS1ozcVE%3D&sa=X&ved=2ahUKEwiZs5_P8IqPAxUYLLkGHQXiI4cQpx96BAgqEBE">Local</a> ||
+        </p>
+    </div>
+
+  <script src="inicial.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle com botão e CSS</title>
+  <style>
+    /* Esconde o checkbox */
+    #toggle {
+      display: none;
+    }
+
+    /* Estilo do botão (label imitando button) */
+    label {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s;
+      text-align: center;
+    }
+    label:hover {
+      background: #2980b9;
+    }
+
+    /* Conteúdo inicialmente escondido */
+    .conteudo {
+      display: none;
+      margin-top: 15px;
+      padding: 10px;
+      background: #f1f1f1;
+      border-radius: 6px;
+    }
+
+    /* Quando o checkbox está marcado, mostra */
+    #toggle:checked ~ .conteudo {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- “Memória” do clique -->
+  <input type="checkbox" id="toggle">
+
+  <!-- Botão visual -->
+  <label for="toggle">Mostrar / Esconder</label>
+
+  <!-- Conteúdo controlado -->
+  <div class="conteudo">
+    <p>Este conteúdo aparece e some ao clicar no botão.</p>
+  </div>
+
+</body>
+</html>

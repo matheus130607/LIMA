@@ -1,5 +1,5 @@
-function cadastro() {
-    window.location.href = "cadastro.html"
+function matriculas() {
+    window.location.href = "matriculas.html"
 }
 
 function eventos() {
@@ -13,3 +13,4 @@ function faleconosco() {
 function inicio() {
     window.location.href = "Inicial.html"
 }
+

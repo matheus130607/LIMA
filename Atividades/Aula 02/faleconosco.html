@@ -8,29 +8,42 @@
 </head>
 <body>
     <div class="container">
+        <H1>Bem vindo a Capela de Santo Antônio</H1>
+        
         <div class="menu">
-            <H1>Bem vindo a Capela de Santo Antônio</H1>
     <button onclick="inicio()">Inicio</button>
-    <button onclick="cadastro()">Cadastrar-se</button>
     <button onclick="eventos()">Eventos</button>
     <button onclick="matriculas()">Matriculas</button>
     <button onclick="faleconosco()">Fale conosco</button>
-    
         </div>
-        <h2>Fale Conosco</h2>
+        
+
+        <div class="formas-contato">
+            <h2>Formas de contato</h2>
+            <p><strong>Telefone:</strong>(99)99999-9999</p>
+        </div>
 
         <div class="contato">
-                <label for="email">Email: </label>
-            <input type="text" id="email">
+            <h2>Fale Conosco</h2>
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" placeholder="Digite seu nome">
 
-                <label for="nome">Nome: </label>
-            <input type="text" id="nome">
+                <label for="email">Email: </label>
+            <input type="text" id="email" placeholder="Digite seu email">
 
                 <label for="mensagem">Mensagem: </label>
-            <input type="text" id="mensagem">
+            <input type="text" id="mensagem" placeholder="Digite sua mensagem">
             
-            <button onclick="">Enviar</button>
+            <button onclick="enviar()">Enviar</button>
         </div>
+    </div>
+
+    <div class="rodape">
+        <p> Contatos: 
+            <a href="https://www.facebook.com/groups/252665982282954/posts/1566153484267524/">Facebook</a> ||
+            <a href="">Telefone</a> ||
+            <a href="https://www.google.com/local/place/fid/0x94c7da6a123c874f:0xfe2ce009d72d4c26/photosphere?iu=https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid%3DkRWnoCy_4WJ7o_ZGVKZ3qQ%26cb_client%3Dsearch.gws-prod.gps%26yaw%3D84.42268%26pitch%3D0%26thumbfov%3D100%26w%3D0%26h%3D0&ik=CAISFmtSV25vQ3lfNFdKN29fWkdWS1ozcVE%3D&sa=X&ved=2ahUKEwiZs5_P8IqPAxUYLLkGHQXiI4cQpx96BAgqEBE">Local</a> ||
+        </p>
     </div>
 
     <script src="inicial.js"></script>
