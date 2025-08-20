@@ -12,7 +12,14 @@ body {
     padding: 20px;
 }
 
-/* Título principal centralizado */
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Título principal */
 h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -52,60 +59,81 @@ h1 {
 }
 
 
-/* Container principal */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Container de matrícula com flex */
-.matricula-container {
+/* Container contato (form + formas de contato lado a lado) */
+.contato-container {
     display: flex;
     align-items: flex-start;
     gap: 30px;
-    flex-wrap: wrap; /* garante responsividade */
+    flex-wrap: wrap;
 }
 
-/* Texto da matrícula à esquerda */
+/* Formulário (lado esquerdo) */
 .matriculas_texto {
     flex: 1;
     min-width: 300px;
+    background: rgba(255, 255, 255, 0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Formulários */
-.form-grupo {
+.matriculas_texto h2 {
+    text-align: center;
     margin-bottom: 15px;
 }
 
-.form-grupo label {
+.matriculas_texto label {
     display: block;
-    margin-bottom: 5px;
+    margin-top: 10px;
     font-weight: bold;
 }
 
-.form-grupo input,
-.form-grupo select {
+.matriculas_texto input {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
+    margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 6px;
+    font-size: 14px;
 }
 
-/* Imagem à direita */
+.matriculas_texto button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    background-color: #002244;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.matriculas_texto button:hover {
+    background-color: #00162a;
+    transform: scale(1.03);
+}
+
+/* Formas de contato (lado direito) */
 .matri {
     flex: 1;
     display: flex;
-    justify-content: auto;
-    align-items: auto;
-    min-width: 400px;
-    height: 450px;
-    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
 }
 
-.matri img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;  
+.formas-contato {
+    background: rgba(255, 255, 255, 0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.formas-contato h2 {
+    margin-bottom: 10px;
 }
 
 /* Rodapé */

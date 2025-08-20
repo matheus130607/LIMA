@@ -4,39 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capela de Santo Antônio- Rio Claro</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="faleconosco.css">
 </head>
 <body>
-    <div class="container">
-        <H1>Bem vindo a Capela de Santo Antônio</H1>
+        <h1>Bem vindo à Capela de Santo Antônio</h1>
         
         <div class="menu">
-    <button onclick="inicio()">Inicio</button>
-    <button onclick="eventos()">Eventos</button>
-    <button onclick="matriculas()">Matriculas</button>
-    <button onclick="faleconosco()">Fale conosco</button>
-        </div>
-        
-
-        <div class="formas-contato">
-            <h2>Formas de contato</h2>
-            <p><strong>Telefone:</strong>(99)99999-9999</p>
+            <button onclick="inicio()">Inicio</button>
+            <button onclick="eventos()">Eventos</button>
+            <button onclick="matriculas()">Matriculas</button>
+            <button onclick="faleconosco()">Fale conosco</button>
         </div>
 
-        <div class="contato">
-            <h2>Fale Conosco</h2>
-            <label for="nome">Nome: </label>
-            <input type="text" id="nome" placeholder="Digite seu nome">
+        <!-- bloco com formulário e formas de contato lado a lado -->
+        <div class="contato-container">
+            
+            <div class="matriculas_texto">
+                <h2>Fale Conosco</h2>
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" placeholder="Digite seu nome:">
 
                 <label for="email">Email: </label>
-            <input type="text" id="email" placeholder="Digite seu email">
+                <input type="text" id="email" placeholder="Digite seu email:">
 
                 <label for="mensagem">Mensagem: </label>
-            <input type="text" id="mensagem" placeholder="Digite sua mensagem">
-            
-            <button onclick="enviar()">Enviar</button>
+                <input type="text" id="mensagem" placeholder="Digite sua mensagem:">
+                
+                <button onclick="enviar()">Enviar</button>
+            </div>
+
+            <div class="matri">
+                <div class="formas-contato">
+                    <h2>Formas de contato</h2>
+                    <p><strong>Telefone:</strong> (99) 99999-9999</p>
+                    <p><strong>Email:</strong> paroquiasantoantonio@gmail.com</p>
+                    
+                </div>
+            </div>
         </div>
-    </div>
+    
 
     <div class="rodape">
         <p> Contatos: 
