@@ -19,6 +19,7 @@ h1 {
     font-size: 2.5em;
 }
 
+
 /* Menu */
 .menu {
     background-color: #002244;
@@ -81,6 +82,24 @@ h1 {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+}
+
+.matriculas_texto button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    background-color: #002244;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.matriculas_texto button:hover {
+    background-color: #00162a;
+    transform: scale(1.03);
 }
 
 .form-grupo input,
