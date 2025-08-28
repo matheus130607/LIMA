@@ -1,0 +1,108 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #000; 
+    color: #fff;
+    padding: 20px;
+    text-align: center; 
+}
+
+/* TÍTULOS PRINCIPAIS */
+h1 {
+    color: #FF00FF; 
+    margin-bottom: 10px;
+    text-shadow: 2px 2px #00FFFF; 
+    font-size: 2rem;
+}
+
+h2 {
+    color: #00FFFF; 
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #FF00FF; 
+    font-size: 1.2rem;
+    padding-bottom: 30px;
+}
+
+/* SECTION E ARTICLE */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-top: 20px;
+    gap: 30px;
+}
+
+article.conteudo {
+    background-color: #111; 
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #FFFF00; 
+    max-width: 350px; 
+    text-align: center;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+article.conteudo:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 20px #FF00FF; 
+    background-color: #222; 
+}
+
+/* EFEITO LEVE NO VÍDEO AO HOVER */
+article.conteudo:hover iframe {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* VÍDEO */
+article iframe {
+    width: 100%;   
+    max-width: 300px; 
+    height: 169px;  
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    border: 3px solid #FF00FF; 
+}
+
+/* TÍTULOS DENTRO DO ARTICLE */
+article h3 {
+    margin: 10px 0;
+    color: #00FF00; 
+    text-shadow: 1px 1px #FFFF00;
+    font-size: 0.9rem;
+}
+
+article h4 {
+    margin: 5px 0;
+    color: #FFFF00; 
+    font-size: 0.7rem;
+}
+
+article p {
+    font-size: 0.7rem;
+    color: #FF00FF; 
+}
+
+.rodape {
+    margin-top: 50px;
+    text-align: center;
+    background-color: #111; 
+    padding: 15px 10px;
+    border-top: 2px solid #FF00FF; 
+    border-radius: 8px;
+}
+
+.rodape p {
+    color: #FF00FF; 
+    font-size: 0.8rem;
+    text-shadow: 1px 1px #00FFFF; 
+}
