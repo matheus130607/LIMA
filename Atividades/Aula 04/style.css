@@ -1,4 +1,8 @@
 
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Libertinus+Keyboard&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,12 +11,31 @@
 
 /* BODY */
 body {
-    font-family: 'Press Start 2P', cursive;
-    background-color: #000; 
+    font-family: 'Pixel';
+    background-image: linear-gradient(
+        90deg, 
+        rgb(0, 0, 0), 
+        rgb(74, 22, 122), 
+        rgb(143, 15, 143)
+    );
+    background-size: 200% 100%; 
+    animation: moverFundo 4s ease-in-out infinite alternate;
+    
     color: #fff;
     padding: 20px;
-    text-align: center; 
+    text-align: center;
 }
+
+/* Animação */
+@keyframes moverFundo {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 100% 0%;
+    }
+}
+
 
 /* TÍTULOS PRINCIPAIS */
 h1 {
@@ -77,9 +100,11 @@ article iframe {
 article h3 {
     margin: 10px 0;
     color: #00FF00; 
-    text-shadow: 1px 1px #FFFF00;
+    text-shadow: 1px 1px darkgreen;
     font-size: 0.9rem;
 }
+
+
 
 article h4 {
     margin: 5px 0;
@@ -95,14 +120,20 @@ article p {
 .rodape {
     margin-top: 50px;
     text-align: center;
-    background-color: #111; 
+    background-color: transparent; 
     padding: 15px 10px;
     border-top: 2px solid #FF00FF; 
     border-radius: 8px;
 }
 
 .rodape p {
-    color: #FF00FF; 
+    color: #00FFFF; 
     font-size: 0.8rem;
-    text-shadow: 1px 1px #00FFFF; 
+    text-shadow: 1px 1px #FF00FF; 
+}
+
+.rodape a {
+    color: #00FFFF; 
+    font-size: 0.8rem;
+    text-shadow: 1px 1px #FF00FF; 
 }
