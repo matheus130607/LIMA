@@ -133,7 +133,12 @@ article p {
 }
 
 .rodape a {
+
     color: #00FFFF; 
     font-size: 0.8rem;
     text-shadow: 1px 1px #FF00FF; 
+}
+
+.rodape a:hover {
+    text-decoration: underline;
 }
