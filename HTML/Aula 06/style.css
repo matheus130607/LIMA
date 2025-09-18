@@ -1,0 +1,39 @@
+ body {
+    font: 1em Arial, Helvetica, sans-serif;
+    background-color: peachpuff;
+ }
+
+ article#caixa {
+    background-color: rgb(214, 95, 218);
+    width: 400px;
+    margin: auto;
+    padding: 1px 10px;
+    box-shadow: 3px 5px 4px purple;
+    border-radius: 100px;
+    /* border-radius: 10px 20px 30px 40px; */
+    /* border-radius: 10px 30px; */
+ }
+ 
+ 
+ h1 {
+            
+             width: 300px;
+            height: 30px;
+            /*background-color: lightgray;
+            text-align: center;            
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            padding: 20px;
+            outline-width: 30px;
+            outline-style: solid;
+            outline-color: blue;
+            margin: 50px; */
+            border-radius: 10px;
+            border: 10px solid red;
+            outline: 30px solid blue;
+            text-align: center;
+            padding: 20px;
+            /* margin: 0px 10px 20px 30px; */
+            margin: auto;
+        }

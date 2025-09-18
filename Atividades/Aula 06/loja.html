@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loja.css">
+    <title>MoodLook</title>
+</head>
+<body>
+    <header>
+        <nav class="container">
+        <h1 class="titulo" onclick="inicial()">MoodLook</h1>
+        <h3>Vitrine 2025: Moda, Essência e Estilo em Alta Definição</h3>
+
+        <select name="produtos" id="produtos">
+            <option value="">Selecione ...</option>
+            <option value="perfumes">Perfumes</option>
+            <option value="roupaM">Roupas Masculinas</option>
+            <option value="roupaF">Roupas Femininas</option>
+            <option value="bolsas">Bolsas</option>
+            <option value="acessorios">Acessórios</option>
+        </select>
+        <button onclick="carrinho()">Carrinho</button>
+        <input type="text" id="buscar" placeholder="Buscar Produtos">
+        </nav>
+    </header>
+    
+    <main>
+        <section id="intro">
+            <h2>Conheça um pouco sobre nós !!</h2>
+            <p>A MoodLook nasceu para transformar moda em experiência. Mais do que roupas, perfumes, bolsas, acessórios e instrumentos, oferecemos formas de expressão que unem estilo, arte e identidade. Com design moderno, cores sofisticadas e uma proposta imersiva, criamos um espaço onde cada detalhe inspira atitude e conecta você às tendências de 2025.</p>
+        </section>
+    
+        <section>
+            <article class="carousel">
+                <aside class="slides">
+                    <img src="IMG/Slides imagem 1.jpg" alt="Imagem 1">
+                    <img src="IMG/Slides imagem 2.jpg" alt="Imagem 2">
+                    <img src="IMG/Slides imagem 3.jpg" alt="Imagem 3">
+                    <img src="IMG/Slides imagem 4.jpg" alt="Imagem 4">
+                </aside>
+            </article>
+        </section>
+    </main>
+    
+    <main>
+        <section class="perfu">
+    <h3>Principais Perfumes</h3>
+    <div class="perfu1">
+        <div class="card">
+            <img src="IMG/Perfume Lancôme.webp" alt="Lancôme">
+            <p>Perfume Lancôme</p>
+            <p>Preço: R$639,99</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="IMG/Perfume La Petite Robe Noire, de Guerlain.jpg" alt="La Petite Robe Noire">
+            <p>Perfume La Petite Robe Noire</p>
+            <p>Preço: R$649,99</p>
+        </div>
+    </div>
+</section>
+    </main>
+    
+    <footer>
+        <p>&copy; Criador: Matheus Malaman || email: criador@gmail.com || <a href="http://facebook.com/">Facebook</a></p>
+    </footer>
+
+    <script src="loja.js"></script>
+</body>
+</html>
